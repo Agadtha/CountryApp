@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvCountry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pilih Country"
+        android:layout_constraintBottom_toBottom="parent"
+        android:layout_constraintEnd_toEnd="parent"
+        android:layout_constraintStart_toStartOf="parent"
+        android:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinnerCountry"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Spinner
+        android:id="@+id/spinnerProvinces"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <DatePicker
+        android:id="@+id/datePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:calendarViewShown="false"
+        android:datePickerMode="calendar" />
+
+    <TimePicker
+        android:id="@+id/timePicker"
+        android:timePickerMode="clock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_show_calendar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show Calendar"/>
+
+    <Button
+        android:id="@+id/btn_show_time_picker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show Time Picker"/>
+
+</LinearLayout>
